@@ -1,9 +1,3 @@
-
 <!-- (keyup.enter)="triggerEnter()"  -->
-<input 
-    type="text" 
-    placeholder="Buscar por capital" 
-    class="form-control" 
-    #txtSearchInput
-    (keyup)="onKeyPress(txtSearchInput.value)"
->
+<input type="text" [value]="initialValue" placeholder="Buscar por capital" class="form-control" #txtSearchInput
+    (keyup)="onKeyPress(txtSearchInput.value)">
